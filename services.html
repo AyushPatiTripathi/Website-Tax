@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services | Tripathi Tax Consultants</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.8s ease-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="nav-container">
+      <h1 class="logo">Tripathi Tax Consultants</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Services Section -->
+  <section class="services-section">
+    <h2>Comprehensive Tax & Financial Services</h2>
+    <p>We provide a wide range of tax, accounting, and advisory services to individuals, professionals, startups, and corporations.</p>
+
+    <div class="service-grid">
+      <div class="service-box fade-in">
+        <img src="Income-tax.jpg" alt="Income Tax Filing">
+        <h3>Income Tax Filing</h3>
+        <p>Filing for individuals, salaried professionals, and businesses. Includes document preparation, e-verification, and audit support.</p>
+      </div>
+      <div class="service-box fade-in">
+        <img src="assets/gst.jpg" alt="GST Compliance">
+        <h3>GST Registration & Compliance</h3>
+        <p>Registration, monthly returns, invoice reconciliation, audit support, and compliance advisory.</p>
+      </div>
+      <div class="service-box fade-in">
+        <img src="assets/advisory.jpg" alt="Tax Advisory">
+        <h3>Tax Planning & Advisory</h3>
+        <p>Personalized strategies to reduce tax burden while complying with all applicable laws and regulations.</p>
+      </div>
+      <div class="service-box fade-in">
+        <img src="assets/company-formation.jpg" alt="Company Formation">
+        <h3>Company Formation</h3>
+        <p>Get help registering your business, PAN/TAN, digital signatures, and complying with ROC norms.</p>
+      </div>
+      <div class="service-box fade-in">
+        <img src="assets/investment.jpg" alt="Investment Planning">
+        <h3>Investment & Financial Planning</h3>
+        <p>Expert guidance on mutual funds, retirement plans, insurance, and more to secure your financial future.</p>
+      </div>
+      <div class="service-box fade-in">
+        <img src="assets/accounting.jpg" alt="Accounting Bookkeeping">
+        <h3>Accounting & Bookkeeping</h3>
+        <p>Professional record-keeping and reporting services tailored to your business requirements.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta fade-in">
+    <h2>Need Help With Taxes or Starting a Business?</h2>
+    <p>Schedule a free consultation with our experts today and take the first step toward stress-free financial management.</p>
+    <a href="contact.html" class="btn">Contact Us</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Tripathi Tax Consultants. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Animation Script -->
+  <script>
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px"
+    };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+  </script>
+
+</body>
+</html>
