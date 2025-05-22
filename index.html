@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Home | Tripathi Tax Consultants</title>
   <link rel="stylesheet" href="style.css" />
+  <script async src="scripts/main.js"></script>
 </head>
 <body>
 
   <!-- Header / Navigation -->
   <header>
-    <div class="nav-container">
+    <div class="navbar">
       <h1 class="logo">Tripathi Tax Consultants</h1>
       <nav>
         <ul class="nav-links">
@@ -18,7 +19,9 @@
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="join.html">join</a></li>
         </ul>
+    </div class="hamburger">&#9776;</div>
       </nav>
     </div>
   </header>
@@ -75,7 +78,7 @@
       <div class="snippet">
         <h4>Top 5 Common Tax Mistakes</h4>
         <p>Avoid penalties by steering clear of these frequent errors in your income tax return.</p>
-        <a href="#">Read More</a>
+        <a href="https://www.livemint.com/money/personal-finance/top-5-mistakes-to-avoid-while-filing-your-income-tax-return-in-2025-26-itr-11746435246815.html">Read More</a>
       </div>
       <div class="snippet">
         <h4>GST Updates 2025</h4>
@@ -104,6 +107,13 @@
       </div>
     </div>
   </footer>
-
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+  
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+  </script>
 </body>
 </html>

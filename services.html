@@ -22,7 +22,7 @@
 
   <!-- Header -->
   <header>
-    <div class="nav-container">
+    <div class="navbar">
       <h1 class="logo">Tripathi Tax Consultants</h1>
       <nav>
         <ul class="nav-links">
@@ -30,15 +30,19 @@
           <li><a href="about.html">About</a></li>
           <li><a href="services.html" class="active">Services</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="join.html">join</a></li>
         </ul>
+      </div class="hamburger">&#9776;</div>
       </nav>
     </div>
   </header>
 
   <!-- Services Section -->
   <section class="services-section">
-    <h2>Comprehensive Tax & Financial Services</h2>
-    <p>We provide a wide range of tax, accounting, and advisory services to individuals, professionals, startups, and corporations.</p>
+    <h2 style="color: aliceblue;">Comprehensive Tax & Financial Services</h2>
+    <br>
+    <p style="color: aliceblue;"><strong>We provide a wide range of tax, accounting, and advisory services to individuals, professionals, startups, and corporations.</strong></p>
+    <br>
 
     <div class="service-grid">
       <div class="service-box fade-in">
@@ -47,27 +51,27 @@
         <p>Filing for individuals, salaried professionals, and businesses. Includes document preparation, e-verification, and audit support.</p>
       </div>
       <div class="service-box fade-in">
-        <img src="assets/gst.jpg" alt="GST Compliance">
+        <img src="gst.png" alt="GST Compliance">
         <h3>GST Registration & Compliance</h3>
         <p>Registration, monthly returns, invoice reconciliation, audit support, and compliance advisory.</p>
       </div>
       <div class="service-box fade-in">
-        <img src="assets/advisory.jpg" alt="Tax Advisory">
+        <img src="taxsaving.jpg" alt="Tax Advisory">
         <h3>Tax Planning & Advisory</h3>
         <p>Personalized strategies to reduce tax burden while complying with all applicable laws and regulations.</p>
       </div>
       <div class="service-box fade-in">
-        <img src="assets/company-formation.jpg" alt="Company Formation">
+        <img src="pan.jpg" alt="Company Formation">
         <h3>Company Formation</h3>
         <p>Get help registering your business, PAN/TAN, digital signatures, and complying with ROC norms.</p>
       </div>
       <div class="service-box fade-in">
-        <img src="assets/investment.jpg" alt="Investment Planning">
+        <img src="investment.jpg" alt="Investment Planning">
         <h3>Investment & Financial Planning</h3>
         <p>Expert guidance on mutual funds, retirement plans, insurance, and more to secure your financial future.</p>
       </div>
       <div class="service-box fade-in">
-        <img src="assets/accounting.jpg" alt="Accounting Bookkeeping">
+        <img src="accounting.jpg" alt="Accounting Bookkeeping">
         <h3>Accounting & Bookkeeping</h3>
         <p>Professional record-keeping and reporting services tailored to your business requirements.</p>
       </div>
@@ -114,6 +118,13 @@
       appearOnScroll.observe(fader);
     });
   </script>
+ <script>
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector(".nav-links");
 
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+</script>
 </body>
 </html>

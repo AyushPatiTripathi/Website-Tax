@@ -59,7 +59,7 @@
 
   <!-- Header -->
   <header>
-    <div class="nav-container">
+    <div class="navbar">
       <h1 class="logo">Tripathi Tax Consultants</h1>
       <nav>
         <ul class="nav-links">
@@ -67,7 +67,9 @@
           <li><a href="about.html" class="active">About</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="join.html">join</a></li>
         </ul>
+      </div class="hamburger">&#9776;</div>
       </nav>
     </div>
   </header>
@@ -116,6 +118,13 @@
       </div>
     </div>
   </footer>
-
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+  
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+  </script>
 </body>
 </html>
