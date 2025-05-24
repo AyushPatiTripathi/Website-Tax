@@ -6,40 +6,53 @@
   <title>About Us | Tripathi Tax Consultants</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    .about-section {
-      padding: 2rem;
-      background-color: #f9f9f9;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f7fa;
+    }
+    .about-section , .team-section {
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin:auto;
+      background: #f9f9f9;
     }
 
-    .about-section h2 {
+    .about-section h2 ,.team-section h3 {
       font-size: 2.2rem;
-      margin-bottom: 1rem;
+      color:#003366;
+
+      margin-bottom: 1.2rem;
+      text-align: center;
     }
 
     .about-section p {
       font-size: 1.1rem;
       line-height: 1.8;
+      color: #333;
+      text-align: justify;
       margin-bottom: 1.5rem;
     }
 
-    .team-section {
-      padding: 2rem;
-      background: #fff;
-    }
+    
 
-    .team-section h3 {
-      font-size: 1.8rem;
-      margin-bottom: 1.5rem;
-    }
+   
 
     .team-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 2rem;
+      margin-top: 2rem;
     }
 
     .team-member {
       text-align: center;
+      background:#fff;
+      padding:1.5 rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
     }
 
     .team-member img {
@@ -48,10 +61,34 @@
       object-fit: cover;
       border-radius: 50%;
       margin-bottom: 1rem;
+      border :3px solid #003366
     }
 
     .team-member h4 {
-      margin-bottom: 0.25rem;
+      margin-bottom: 0.95rem;
+      color:#003366
+
+    }
+    .cta {
+      text-align:center;
+      padding: 3rem 2rem;
+      background : #003366;
+      color: #fff;
+    }
+    .cta h2{
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .cta .btn {
+      background :white;
+      color :#003366;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s ;
+    }
+    .cta .btn:hover {
+      background: #dfe8f1;
     }
   </style>
 </head>
@@ -69,7 +106,7 @@
           <li><a href="contact.html">Contact</a></li>
           <li><a href="join.html">join</a></li>
         </ul>
-      </div class="hamburger">&#9776;</div>
+      <div class="hamburger">&#9776;</div>
       </nav>
     </div>
   </header>
@@ -89,7 +126,7 @@
     <h3>Meet Our Expert Team</h3>
     <div class="team-grid">
       <div class="team-member">
-        <img src="assets/team1.jpg" alt="CA Ramesh Tripathi">
+        <img src="team1.jpg" alt="CA Ramesh Tripathi">
         <h4>CA Ramesh Tripathi</h4>
         <p>Founder & Chief Consultant</p>
       </div>
@@ -105,6 +142,13 @@
       </div>
     </div>
   </section>
+  <!-- Call to Action -->
+  <section class="cta">
+    <h2> Want to Work with Trusted Experts ?</h2>
+    <a href ="contact.html" class="btn">contact Us Today</a>
+    </section>
+
+
 
   <!-- Footer -->
   <footer>
