@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Our Services | Tripathi Tax Consultants</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     .fade-in {
       opacity: 0;
@@ -23,55 +24,85 @@
   <!-- Header -->
   <header>
     <div class="navbar">
-      <h1 class="logo">Tripathi Tax Consultants</h1>
+      <a href="#" class="logo">Tripathi <span>Tax</span></a>
       <nav>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="services.html " class ="active">Services</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="join.html">join</a></li>
+          <li><a href="join.html">Join</a></li>
         </ul>
-      </div class="hamburger">&#9776;</div>
+        <div class="hamburger">&#9776;</div>
       </nav>
     </div>
   </header>
 
   <!-- Services Section -->
-  <section class="services-section">
-    <h2 style="color: aliceblue;">Comprehensive Tax & Financial Services</h2>
-    <br>
-    <p style="color: aliceblue;"><strong>We provide a wide range of tax, accounting, and advisory services to individuals, professionals, startups, and corporations.</strong></p>
-    <br>
+  <section class="section">
+    <div class = "section-header">
 
-    <div class="service-grid">
-      <div class="service-box fade-in">
-        <img src="Income-tax.jpg" alt="Income Tax Filing">
+    
+    <h2 >Comprehensive Tax & Financial Services</h2>
+    
+    <p>  We provide a wide range of tax, accounting, and advisory services to individuals, professionals, startups, and corporations.</p>
+   
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class ="service-icon">
+          <i class="fas fa-user"></i>
+        </div>
+        <div class="service-content">
         <h3>Income Tax Filing</h3>
         <p>Filing for individuals, salaried professionals, and businesses. Includes document preparation, e-verification, and audit support.</p>
+
       </div>
-      <div class="service-box fade-in">
-        <img src="gst.png" alt="GST Compliance">
+      </div>
+
+      <div class="service-card">
+        <div class ="service-icon">
+          <i class="fas fa-user"></i>
+        </div>
+        <div class="service-content">
         <h3>GST Registration & Compliance</h3>
         <p>Registration, monthly returns, invoice reconciliation, audit support, and compliance advisory.</p>
       </div>
-      <div class="service-box fade-in">
-        <img src="taxsaving.jpg" alt="Tax Advisory">
+      </div>
+      <div class="service-card"">
+        <div class ="service-icon">\
+          <i class="fas fa-calculator"></i>
+        </div>
+        <div class="service-content">
         <h3>Tax Planning & Advisory</h3>
         <p>Personalized strategies to reduce tax burden while complying with all applicable laws and regulations.</p>
       </div>
-      <div class="service-box fade-in">
-        <img src="pan.jpg" alt="Company Formation">
+      </div>
+      <div class="service-card" >
+        <div class="service-icon">
+          <i class="fas fa-building"></i>
+        </div>
+        <div class ="service-content">
         <h3>Company Formation</h3>
         <p>Get help registering your business, PAN/TAN, digital signatures, and complying with ROC norms.</p>
       </div>
-      <div class="service-box fade-in">
-        <img src="investment.jpg" alt="Investment Planning">
+      </div>
+      <div class="service-card">
+        <div class ="service-icon">
+          <i class="fas fa-briefcase"></i>
+        </div>
+        <div class ="service-content">
+        
         <h3>Investment & Financial Planning</h3>
         <p>Expert guidance on mutual funds, retirement plans, insurance, and more to secure your financial future.</p>
       </div>
-      <div class="service-box fade-in">
-        <img src="accounting.jpg" alt="Accounting Bookkeeping">
+      </div>
+      <div class="service-card">
+        <div class ="service-icon">
+          <i class="fas fa-file-invoice"></i>
+        </div>
+        <div class="service-content">
         <h3>Accounting & Bookkeeping</h3>
         <p>Professional record-keeping and reporting services tailored to your business requirements.</p>
       </div>
@@ -79,7 +110,7 @@
   </section>
 
   <!-- Call to Action -->
-  <section class="cta fade-in">
+  <section class="cta">
     <h2>Need Help With Taxes or Starting a Business?</h2>
     <p>Schedule a free consultation with our experts today and take the first step toward stress-free financial management.</p>
     <a href="contact.html" class="btn">Contact Us</a>
@@ -87,14 +118,65 @@
 
   <!-- Footer -->
   <footer>
-    <div class="footer-content">
-      <p>&copy; 2025 Tripathi Tax Consultants. All rights reserved.</p>
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>Tripathi Tax Consultants</h3>
+        <p>Providing expert tax solutions since 2005. We help individuals and businesses navigate complex tax regulations while maximizing savings.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
       </div>
+      
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="join.html">Join Our Team</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Services</h3>
+        <ul class="footer-links">
+          <li><a href="#">Personal Tax Returns</a></li>
+          <li><a href="#">Business Tax Services</a></li>
+          <li><a href="#">Tax Planning</a></li>
+          <li><a href="#">GST Compliance</a></li>
+          <li><a href="#">Financial Advisory</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Contact Us</h3>
+        <ul class="contact-info">
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span>123 Business Avenue, Financial District, Mumbai 400001</span>
+          </li>
+          <li>
+            <i class="fas fa-phone"></i>
+            <span>(555) 123-4567</span>
+          </li>
+          <li>
+            <i class="fas fa-envelope"></i>
+            <span>info@tripathitax.com</span>
+          </li>
+          <li>
+            <i class="fas fa-clock"></i>
+            <span>Mon-Fri: 9:00 AM - 6:00 PM</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <p>&copy; 2025 Tripathi Tax Consultants. All rights reserved.</p>
     </div>
   </footer>
 

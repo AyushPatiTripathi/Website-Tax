@@ -1,35 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<header>
-    <nav class ="navbar">
-        <div class="nav-container">
-            <h1 class="logo">Tripathi Tax Consultants</h1>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="join.html">join</a></li>
-            </ul>
-        <div class="hamburger">&#9776;</div>
-        
-    </nav>
-</header>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Join Tripathi Tax Consultants. Explore career opportunities and become part of our expert team.">
+  <title>Join Us | Tripathi Tax Consultants</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    :root {
+      --primary-color: #007bff;
+      --hover-color: #0056b3;
+      --light-bg: #f9f9f9;
+      --box-bg: #ffffff;
+      --text-dark: #333;
+      --error-color: #dc3545;
+    }
 
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .join-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 2rem;
+      background-color: var(--light-bg);
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .join-form {
+      background: var(--box-bg);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .join-form h3 {
+      margin-bottom: 1rem;
+      color: var(--text-dark);
+    }
+
+    .join-form input,
+    .join-form textarea,
+    .join-form select {
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    .join-form input:focus,
+    .join-form textarea:focus,
+    .join-form select:focus {
+      border-color: var(--primary-color);
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+      outline: none;
+    }
+
+    .error-message {
+      color: var(--error-color);
+      margin-top: -0.5rem;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+      display: none;
+    }
+
+    .join-form button {
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .join-form button:hover {
+      background-color: var(--hover-color);
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .join-container {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
 <body>
-    <script>
-        const hamburger = document.querySelector(".hamburger");
-        const navLinks = document.querySelector(".nav-links");
+
+  <!-- Header -->
+  <header>
+    <div class="navbar">
+      <h1 class="logo">Tripathi Tax Consultants</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="join.html" class="active">Join</a></li>
+        </ul>
+        <div class="hamburger">&#9776;</div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Join Form Section -->
+  <section class="join-container">
+    <div class="join-form">
+      <h3>Join Our Team</h3>
+      <form id="joinForm">
+        <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+        <span class="error-message" id="nameError">Please enter your name</span>
+
+        <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+        <span class="error-message" id="emailError">Please enter a valid email</span>
+
+        <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+
+        <select id="position" name="position" required>
+          <option value="">Select Position Interested In</option>
+          <option value="Tax Consultant">Tax Consultant</option>
+          <option value="GST Specialist">GST Specialist</option>
+          <option value="Account Executive">Account Executive</option>
+          <option value="Internship">Internship</option>
+        </select>
+        <span class="error-message" id="positionError">Please select a position</span>
+
+        <textarea id="message" name="message" rows="5" placeholder="Tell us why you're a good fit" required></textarea>
+        <span class="error-message" id="messageError">Please provide a message</span>
+
+        <button type="submit">Apply Now</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>Tripathi Tax Consultants</h3>
+        <p>Providing expert tax solutions since 2005. We help individuals and businesses navigate complex tax regulations while maximizing savings.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
       
-        hamburger.addEventListener("click", () => {
-          navLinks.classList.toggle("show");
-        });
-      </script>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="join.html">Join Our Team</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Services</h3>
+        <ul class="footer-links">
+          <li><a href="#">Personal Tax Returns</a></li>
+          <li><a href="#">Business Tax Services</a></li>
+          <li><a href="#">Tax Planning</a></li>
+          <li><a href="#">GST Compliance</a></li>
+          <li><a href="#">Financial Advisory</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Contact Us</h3>
+        <ul class="contact-info">
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span>123 Business Avenue, Financial District, Mumbai 400001</span>
+          </li>
+          <li>
+            <i class="fas fa-phone"></i>
+            <span>(555) 123-4567</span>
+          </li>
+          <li>
+            <i class="fas fa-envelope"></i>
+            <span>info@tripathitax.com</span>
+          </li>
+          <li>
+            <i class="fas fa-clock"></i>
+            <span>Mon-Fri: 9:00 AM - 6:00 PM</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <p>&copy; 2025 Tripathi Tax Consultants. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS: Hamburger + Form Validation -->
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+
+    const joinForm = document.getElementById('joinForm');
+    joinForm.addEventListener('submit', function (e) {
+      let valid = true;
+
+      const name = document.getElementById('name');
+      const nameError = document.getElementById('nameError');
+      if (name.value.trim() === "") {
+        nameError.style.display = "block";
+        valid = false;
+      } else {
+        nameError.style.display = "none";
+      }
+
+      const email = document.getElementById('email');
+      const emailError = document.getElementById('emailError');
+      const emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+      if (!emailRegex.test(email.value.trim())) {
+        emailError.style.display = "block";
+        valid = false;
+      } else {
+        emailError.style.display = "none";
+      }
+
+      const position = document.getElementById('position');
+      const positionError = document.getElementById('positionError');
+      if (position.value === "") {
+        positionError.style.display = "block";
+        valid = false;
+      } else {
+        positionError.style.display = "none";
+      }
+
+      const message = document.getElementById('message');
+      const messageError = document.getElementById('messageError');
+      if (message.value.trim().length < 5) {
+        messageError.style.display = "block";
+        valid = false;
+      } else {
+        messageError.style.display = "none";
+      }
+
+      if (!valid) {
+        e.preventDefault();
+      }
+    });
+  </script>
 </body>
 </html>

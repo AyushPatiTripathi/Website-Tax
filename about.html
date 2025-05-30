@@ -90,6 +90,16 @@
     .cta .btn:hover {
       background: #dfe8f1;
     }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.8s ease-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
   </style>
 </head>
 <body>
@@ -152,14 +162,65 @@
 
   <!-- Footer -->
   <footer>
-    <div class="footer-content">
-      <p>&copy; 2025 Tripathi Tax Consultants. All rights reserved.</p>
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>Tripathi Tax Consultants</h3>
+        <p>Providing expert tax solutions since 2005. We help individuals and businesses navigate complex tax regulations while maximizing savings.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
       </div>
+      
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="join.html">Join Our Team</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Services</h3>
+        <ul class="footer-links">
+          <li><a href="#">Personal Tax Returns</a></li>
+          <li><a href="#">Business Tax Services</a></li>
+          <li><a href="#">Tax Planning</a></li>
+          <li><a href="#">GST Compliance</a></li>
+          <li><a href="#">Financial Advisory</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Contact Us</h3>
+        <ul class="contact-info">
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span>123 Business Avenue, Financial District, Mumbai 400001</span>
+          </li>
+          <li>
+            <i class="fas fa-phone"></i>
+            <span>(555) 123-4567</span>
+          </li>
+          <li>
+            <i class="fas fa-envelope"></i>
+            <span>info@tripathitax.com</span>
+          </li>
+          <li>
+            <i class="fas fa-clock"></i>
+            <span>Mon-Fri: 9:00 AM - 6:00 PM</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <p>&copy; 2025 Tripathi Tax Consultants. All rights reserved.</p>
     </div>
   </footer>
   <script>
